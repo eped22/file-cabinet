@@ -1,0 +1,190 @@
+doctype html
+html
+	head
+		meta(charset='utf-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		meta(name='description', content='')
+		meta(name='author', content='')
+		title M2 Site
+		
+		link(rel='stylesheet', type='text/css', href='/assets/css/main.css')
+		
+		script(src='https://use.typekit.net/kme0pci.js')
+		script.
+			try{Typekit.load({ async: true });}catch(e){}
+	body
+		.home-wrap
+			mixin nav-content()
+				ul
+					li: a(href="#about") About
+					li: a(href="#services") Services
+					li: a(href="#picture") About
+					li: a(href="#boxes") About
+					li: a(href="#contact") Contact
+				
+			.mobile-nav
+				+nav-content()
+			
+			header
+				.header-position
+					h1.logo M2
+					
+					nav.side-nav
+						+nav-content()
+						
+					a(href="mailto:eped22@gmail.com").email-link +free quote
+					
+					.social-media
+						a(href="https://www.facebook.com/M2-Roofing-1730524500512330/" target="_blank")
+							img(src='assets/img/icons/1451602040_46-facebook.png')
+						a(href="mailto:eped22@gmail.com")
+							img(src='assets/img/icons/1451602146_43-twitter.png')
+						a(href="mailto:eped22@gmail.com")
+							img(src='assets/img/icons/1451602153_80-google-plus.png')
+						
+					.hamburger-menu
+						.bar
+				
+			.home-sections
+				section.top
+					video(poster='', autoplay='true', loop='')
+						source(src='m2-roofvid.mp4')
+						source(src='m2-roofvid.webm', type='video/webm')
+						
+					.flex.flex--center.text
+						.box-1.top-pad
+							.animated.slideInDown
+								img(src='/assets/img/m2fulllogo.png')
+							p Roofing down to a science
+							
+				section.two
+					.placeholder
+					.text
+						h2 ROOFING DOWN TO A SCIENCE
+						.button-red Learn More
+					.placeholder
+					.pic
+							img(src='/assets/img/reviews.png')
+							
+				section.content#services
+					.kelsey
+						.right-half
+							.main-box
+								h2 Services
+								hr
+								p We are not in the business of selling, we are in the business of serving.
+						.left-half
+							.main-boxer.darker
+								.side
+									h2.side Repair
+									h3.light 01
+								.side-bg
+									p It can be one of the most stressful of situations – a leaky roof that continues to damage ceilings and 		compromise interiors. Over The Top Roofers is your one resource for a prompt and painless resolution.
+							.main-boxer.lighter
+								.side
+									h2.side Replacement
+									h3.light 02
+								.side-bg
+									p It can be one of the most stressful of situations – a leaky roof that continues to damage ceilings and 		compromise interiors. Over The Top Roofers is your one resource for a prompt and painless resolution.
+							.main-boxer.darker
+								.side
+									h2.side Cleaning
+									h3.light 03
+								.side-bg
+									p It can be one of the most stressful of situations – a leaky roof that continues to damage ceilings and 		compromise interiors. Over The Top Roofers is your one resource for a prompt and painless resolution.
+
+				section.three#picture
+					.flex.flex--center
+						.col-33.home
+							h3 Title
+							.text-box
+								p Lorem ipsum dolor sit amet, ea viris doctus tractatos sed, ad est tantas fabellas. Aperiam sapientem ea nec, primis option principes no nam. Cu ius erat legere aliquam. Vis laoreet inimicus assentior at. primis option principes no nam. Cu ius erat legere aliquam. Vis laoreet inimicus assentior at. Cu ius erat legere aliquam. Vis laoreet inimicus assentior at. primis option principes no nam. Cu ius erat legere aliquam. Vis laoreet inimicus assentior at.
+
+						.col-33.guy-flip
+						
+						.col-33.guy
+
+				section.four#boxes
+					.topper-text
+						h2 Text Area
+					.half-top
+						.card.grey
+							.card-top
+							.card-middle
+							.card-bottom
+								p Lorem ipsum dolor sit amet, ea viris doctus tractatos sed, ad est tantas fabellas. Aperiam sapientem ea nec, primis option principes no nam. Cu ius erat legere aliquam. Vis laoreet inimicus assentior at.
+						.card.white
+							.card-top
+							.card-middle
+							.card-bottom
+								p.thin-black Lorem ipsum dolor sit amet, ea viris doctus tractatos sed, ad est tantas fabellas. Aperiam sapientem ea nec. Cu ius erat legere aliquam.
+						.card.grey
+							.card-top
+							.card-middle
+							.card-bottom
+								p Lorem ipsum dolor sit amet, ea viris doctus tractatos sed, ad est tantas fabellas. Aperiam sapientem ea nec, primis option principes no nam. Cu ius erat legere aliquam. Vis laoreet inimicus assentior at.
+						.card.white
+							.card-top
+							.card-middle
+							.card-bottom
+								p.thin-black  With a GAF roof, you know that you will be covered throughout the warranty period—without fail!
+								img(src='assets/img/icons/gaf-warranty-weather-stopper.png')
+						
+					.half-bottom
+						.card.white
+							.card-top
+							.card-middle
+							.card-bottom
+								p.thin-black  Each component used in the system has earned the prestigious Good Housekeeping Seal!
+								img(src='assets/img/icons/Good_HouseKeepingSeal.png')
+						.card.grey
+							.card-top
+							.card-middle
+							.card-bottom
+								p Lorem ipsum dolor sit amet, ea viris doctus tractatos sed, ad est tantas fabellas. Aperiam sapientem ea nec, primis option principes no nam. Cu ius erat legere aliquam. Vis laoreet inimicus assentior at.
+						.card.white
+							.card-top
+							.card-middle
+							.card-bottom
+								p.thin-black 93% of property owners would recommend their GAF Master Elite® Contractor to others!
+								img(src='assets/img/icons/commercial.png')
+						.card.grey
+							.card-top
+							.card-middle
+							.card-bottom
+								p Lorem ipsum dolor sit amet, ea viris doctus tractatos sed, ad est tantas fabellas. Aperiam sapientem ea nec, primis option principes no nam. Cu ius erat legere aliquam. Vis laoreet inimicus assentior at.
+							
+				section.contact#contact
+					.flex.flex--center
+						.col-2
+							h2 Contact Us
+							hr
+							br
+					.flexsm.flex--center
+						.col-1-2.con-pad
+							.input
+								input(type="text" placeholder="First")
+						.col-1-2.con-pad
+							.input
+								input(type="text" placeholder="Last")
+					.flex.flex--center
+						.col-2-2.con-pad
+							input
+					.flex.flex--center
+						.col-2-2.con-pad
+							input
+					.flex.flex--center.button22
+						.button SUBMIT
+					
+					
+				section.foot
+					.foot
+						.address-box
+							p 484 Brookline Dr. Atlanta Ga 40404
+						.phone-box
+							p (404)444-7979
+				
+		script(type='text/javascript', src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js')
+		
+		script(type='text/javascript', src='/assets/js/functions.js')

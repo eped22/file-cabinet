@@ -1,0 +1,86 @@
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"]
+	display: inline-block
+	height: 50px
+	padding: 10px 20px
+	color: #222222
+	text-align: center
+	font-size: 30px
+	font-weight: 800
+	line-height: 35px
+	text-transform: uppercase
+	text-decoration: none
+	white-space: nowrap
+	background-color: white
+	border-radius: 3px
+	box-shadow: 0 3px 6px rgba(0,0,0,0.20), 0 3px 6px rgba(0,0,0,0.27)
+	box-sizing: border-box
+	transition: all 0.3s ease-in-out
+	cursor: pointer
+
+	&:hover,
+	&:active,
+	&:focus
+		color: #333333
+		box-shadow: 0 10px 20px rgba(0,0,0,0.21), 0 6px 10px rgba(0,0,0,0.25);
+
+.button-red,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"]
+	display: inline-block
+	height: 50px
+	padding: 10px 20px
+	color: red
+	text-align: center
+	font-size: 30px
+	font-weight: 800
+	line-height: 35px
+	text-transform: uppercase
+	text-decoration: none
+	white-space: nowrap
+	background-color: white
+	border-radius: 2px
+	box-shadow: 0 3px 6px rgba(0,0,0,0.20), 0 3px 6px rgba(0,0,0,0.27)
+	box-sizing: border-box
+	transition: all 0.3s ease-in-out
+	cursor: pointer
+
+	&:hover,
+	&:active,
+	&:focus
+		color: #ff1a1a
+		box-shadow: 0 10px 20px rgba(0,0,0,0.21), 0 6px 10px rgba(0,0,0,0.25);
+
+
+@media (max-width: 640px)	
+	
+	.button,
+		button,
+		input[type="submit"],
+		input[type="reset"],
+		input[type="button"]
+		display: inline-block
+		height: 45px
+		padding: 10px 18px
+		color: #222222
+		font-size: 25px
+		line-height: 30px
+
+	.button-red,
+	button,
+	input[type="submit"],
+	input[type="reset"],
+	input[type="button"]
+		display: inline-block
+		height: 45px
+		padding: 10px 18px
+		color: red
+		font-size: 25px
+		line-height: 30px
+		
+

@@ -1,0 +1,125 @@
+section.content
+	background: white
+	height: 100vh
+	width: 100%
+	overflow: hidden
+	padding: 0
+	margin: 0
+
+	p
+		padding: 40px
+
+	h2
+		font-size: 60px
+		font-weight:400
+		text-align: center
+		margin: 0
+		padding-top: 50px
+		padding-right: 0
+		padding-left: 0
+		padding-bottom: 0
+
+	.kelsey
+		display: flex
+		flex-direction: row
+		flex-wrap: wrap
+		justify-content: space-between
+		overflow: hidden
+		height: 100vh
+		width: 100%
+		margin: 0
+		padding: 0
+	
+		h2.side
+			font-size: 20px
+			font-weight: 900
+			padding-top: 10px
+			padding-bottom: 0
+			color: rgba(0,0,0,.8)
+
+		p
+			padding-top: 40px
+			color: rgba(0,0,0,.7)
+
+		.left-half
+			display: flex
+			flex: 1
+			flex-direction: column
+			flex-wrap: wrap
+			justify-content: space-between
+			overflow: hidden
+			height: 100vh
+			//width: 50%
+			margin: 0
+			padding: 0
+
+		.right-half
+			display: flex
+			flex: 1
+			flex-direction: row
+			flex-wrap: wrap
+			justify-content: space-between
+			overflow: hidden
+			height: 100vh
+			//width: 50%
+			margin: 0
+			padding: 0
+
+		.main-box
+			flex: 1
+	
+		.darker
+			background: #F5F5F5
+		
+		.lighter
+			background: white
+
+		.main-boxer
+			display: flex
+			flex: 1
+			flex-direction: row
+			opacity: 0
+	
+			&.slideInRight
+				animation-name: slideInRight
+				-webkit-animation-duration: 1s
+				animation-duration: 1s
+				-webkit-animation-fill-mode: both
+				animation-fill-mode: both
+				opacity: 1
+	
+		.side
+			flex: 1
+			text-align: center
+
+		.side-bg
+			flex: 3
+	
+@media (max-width: 900px)
+	section.content
+		.kelsey
+			flex-direction: column
+	
+			p
+				font-size: 15px
+				padding: 5px
+	
+@media (max-width: 740px)
+	section.content
+		height: auto
+	
+		h2
+			font-size: 45px
+			padding-top: 5px
+	
+		.kelsey
+			height: auto
+	
+			h2.side
+				font-size: 15px
+		
+			p
+				font-size: 12px
+	
+			.right-half, .left-half
+				height: auto

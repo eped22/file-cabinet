@@ -1,0 +1,54 @@
+section.two
+	display: flex
+	background:
+		image: url(/assets/img/science-oven.jpg)
+		size: cover
+		repeat: no-repeat
+	height: 100vh
+	
+
+	h2
+		font-size: 60px
+		font-weight: 300
+		color: white
+		line-height: 1.1
+		padding-top: 100px
+		text-align: right
+	
+	.placeholder
+		flex: 1
+
+	.text
+		flex: 2
+		
+	.pic
+		flex: 4
+		overflow: hidden
+		margin-top: 100px
+
+@media (max-width: 890px)	
+	h2
+		margin-left: 0
+	
+@media (max-width: 900px)	
+	section.two
+		background: 
+			image:  url(/assets/img/reviews.png), url(/assets/img/science-oven.jpg)
+			size: cover, cover
+			position: bottom, center
+		height: 100vh
+		
+		.placeholder
+			display: none
+
+		.pic
+			display: none
+			width: 100%
+			height: auto
+
+		h2
+			font-size: 40px
+			font-weight: 900
+			margin-left: 0
+			text-align: center
+		

@@ -1,0 +1,120 @@
+section.three
+	background: red
+		//image: url(assets/img/cool-housebw.jpg)
+		attachment: fixed
+		size: cover
+		repeat: no-repeat
+		position: center
+	height: 100vh
+	padding: 0
+	margin: 0
+	text-align: center
+	overflow: hidden
+
+	h3
+		font-size: 50px
+		line-height: .8
+		font-weight: 800
+		color: black
+		padding-top: 10%
+		padding-bottom: 10px
+		padding-left:25px
+		margin: 0
+		text-align: left
+
+
+	p
+		font-size: 20px
+		color: rgba(0,0,0,.74)
+		font-weight: 400
+		padding-top: 0px
+		padding-left: 10px
+		padding-right: 10px
+		margin: 0
+		text-align: left
+
+	.guy
+		background: transparent
+		height: 500px
+
+	.home
+		background:
+			color: white
+			repeat: no-repeat
+			size: cover
+			position: top center
+			max-width: 100%
+			height: auto
+		height: 520px
+		margin-top: 40px
+		margin-left: 70px
+		border: solid black 8px
+		box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)
+		opacity: 0
+
+		&.fadeInLeft
+			animation-name: fadeInLeft
+			-webkit-animation-duration: 1.5s
+			animation-duration: 1.2s
+			-webkit-animation-fill-mode: both
+			animation-fill-mode: both
+			opacity: 1
+
+	.guy-flip
+		background: 
+			//image: url(/assets/img/M2workerflip.jpg)
+			//attachment: fixed
+			//repeat: no-repeat
+			//size: cover
+			//position: top right
+			//max-width: 100%;
+			//height: auto
+		height: 500px
+
+	.text-box
+		width: 90%
+		background: transparent
+		margin: 0 auto
+		padding: 0 auto
+
+@media (max-width: 900px)
+	section.three
+		p
+			font-size: 15px
+	
+@media (max-width: 800px)
+	section.three
+		height: auto
+	
+		.home
+			max-width: 90%
+			height: auto
+			margin: 0 auto
+			margin-top: 15px
+
+		.guy, .home, .guy-flip
+			height: 300px
+
+		.text-box
+			margin-top: 0
+
+		h3
+			font-size: 40px
+			padding-top: 10%
+	
+		p
+			font-size: 12px
+	
+@media (max-width: 750px)
+	section.three
+		height: auto
+	
+		.guy
+			display: none
+	
+		.guy-flip
+			height: 100px
+	
+		.home
+			padding-top: 0px
+		
