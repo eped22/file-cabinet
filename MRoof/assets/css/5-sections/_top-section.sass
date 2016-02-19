@@ -1,0 +1,76 @@
+section.top
+	background: white
+	height: 100vh
+	padding: 0
+	position: relative
+	overflow: hidden
+
+	video
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		z-index: 1
+		min-width: 100%
+		min-height: 100%
+		width: auto
+		background: transparent
+
+	.text
+		z-index: 2
+		position: absolute
+		background: rgba(0,0,0,.7)
+		top: 0
+		bottom: 0
+		left: 0
+		right: 0
+		text-align: center
+	
+	.top-pad
+		padding-top: 160px
+	
+	img
+		max-width: 55%
+	
+	h2
+		font-size: 80px
+		font-weight: 900
+		line-height: .8
+		padding-top: 40%
+		margin: 0
+		color: white
+		text-align: center
+	
+	p
+		font-size: 37px
+		font-weight: 400
+		color: red
+		padding-left: 230px
+		margin-top: -30px
+	
+@media (max-width: 900px)
+	section.top
+		p
+			padding-left: 0
+			padding-top: 55px
+	
+@media (max-width: 640px)
+	section.top
+		h2
+			font-size: 70px
+
+		p
+			font-size: 28px
+			text-align: center
+	
+@media (max-height: 420px)
+	section.top
+		.top-pad
+			padding-top: 100px
+
+		img
+			max-width: 55%
+
+		p
+			font-size: 25px
+			padding-top: 35px

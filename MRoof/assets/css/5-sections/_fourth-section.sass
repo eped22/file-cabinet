@@ -1,0 +1,120 @@
+section.four
+	background: #e1e1e1
+	height: 101vh
+	width: 100%
+	overflow: hidden
+	padding: 0
+	margin: 0
+
+	.topper-text
+		display: flex
+		flex-direction: row
+		flex-wrap: wrap
+		justify-content: center
+		overflow: hidden
+		height: calc(100vh/7)
+		width: 100%
+		background: white
+	
+
+	.half-top
+		display: flex
+		flex-direction: row
+		flex-wrap: wrap
+		justify-content: space-between
+		overflow: hidden
+		height: calc(100vh*3/7)
+		width: 100%
+	
+	.half-bottom
+		display: flex
+		flex-direction: row
+		flex-wrap: wrap
+		justify-content: space-between
+		overflow: hidden
+		height: calc(100vh*3/7)
+		width: 100%
+		margin: 0
+		padding: 0
+	
+	.grey
+		background: #f5f5f5
+		opacity: 0
+	
+		&.fadeInDown
+			animation-name: fadeInDown
+			-webkit-animation-duration: 1.2s
+			animation-duration: 1.2s
+			-webkit-animation-fill-mode: both
+			animation-fill-mode: both
+			opacity: 1
+	
+	.white
+		background: white
+		opacity: 0
+	
+		&.fadeInLeft
+			animation-name: fadeInLeft
+			-webkit-animation-duration: 1.2s
+			animation-duration: 1.2s
+			-webkit-animation-fill-mode: both
+			animation-fill-mode: both
+			opacity: 1
+	
+	.card
+		display: flex
+		flex: 1
+		flex-direction: column
+	
+	.grey-card
+		display: flex
+		flex: 1
+		flex-direction: column
+		background: #F5F5F5
+	
+	.card-top
+		flex: 2
+
+	.card-middle
+		flex: 2
+
+	.card-bottom
+		flex: 1
+		
+	
+		img
+			height: 40px
+			margin: 0
+			padding-left: 20px
+
+	h2
+		color: #101010
+		font-size: 30px
+		font-weight: 600
+		text-align: center
+		margin-top: 30px
+		margin-bottom: 0px
+		padding: 0
+
+	p
+		font-size: 15px
+		font-weight: 600
+		color: rgba(0,0,0,.54)
+		padding: 0
+		margin-left: 15px
+		text-align: left
+	
+	p.thin-black
+		font-size: 20px
+		font-weight: 400
+		color: black
+
+@media (max-width: 740px)
+	section.four
+		p
+			font-size: 10px
+		p.thin-black
+			font-size: 12px
+		.card-bottom
+			img
+				height: 20px

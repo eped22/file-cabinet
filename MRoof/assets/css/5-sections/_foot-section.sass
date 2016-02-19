@@ -1,0 +1,36 @@
+section.foot
+	display: flex
+	height: 51px
+	background: #131313
+	overflow: hidden
+	text-align: center
+	
+	p
+		font-size: 18px
+		font-weight:500
+		color: black
+		padding-top: 15px
+
+	.foot
+		display: flex
+		flex-direction: row
+		flex-wrap: wrap
+		justify-content: space-between
+		overflow: hidden
+		height: 100%
+		width: 100%
+
+		.address-box
+			flex: 1
+			background: white
+	
+		.phone-box
+			flex: 1
+			background: white
+	
+@media (max-width: 740px)
+	section.foot
+		p
+			font-size: 12px
+		.foot
+			flex-direction: column

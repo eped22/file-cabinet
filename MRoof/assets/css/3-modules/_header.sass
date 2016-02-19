@@ -1,0 +1,238 @@
+.home-wrap 
+	
+	header
+		width: 135px
+		background-color: white
+		padding: 0
+		box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)
+	
+		.header-position
+			position: fixed
+			top: 0px
+			left: 0px
+			bottom: 0px
+			width: 135px
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+			background: white
+			padding-top: 10px
+			padding-bottom: 10px
+			box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)
+
+		.logo
+			+hide-text
+			background:
+				image: url(/assets/img/M2logo.svg)
+				repeat: no-repeat
+				position: center
+				size: contain
+			height: 80px
+			padding-left: 5px
+			margin: 0
+	
+		.side-nav
+			ul
+				list-style: none
+				margin: 30px 0 30px 0
+				padding: 60px 20px 30px 0
+				text-align: right
+
+				li
+					margin-bottom: 10px
+
+				a
+					color: black
+					text-decoration: none
+
+					&:last-child
+						margin-bottom: 0
+
+		.email-link
+			display: block
+			background: red
+			text-align: right
+			padding-right: 25px
+			padding-bottom: 10px
+			padding-top: 15px
+			margin-bottom: 0
+			color: white
+			text-decoration: none
+	
+		.social-media
+			display: inline-block
+			margin: 0 auto
+			padding: 0
+			
+			img
+				height: 40px
+				width: auto
+				margin: 0
+				padding: 0
+
+	.mobile-nav
+		display: none
+		position: relative
+		width: 100%
+		background: white
+		padding: 90px 0 20px
+		transform: translateY(-100%)
+		transition: all 0.3s ease-in-out
+	
+		ul
+			list-style: none
+			margin: 0
+			padding: 0
+		li
+			text-align: center
+			margin-bottom: 10px
+	
+@media (max-width: 900px)
+	.home-wrap
+		header
+			width: 100px
+			background-color: white
+			padding: 0
+
+			.header-position
+				position: fixed
+				top: 0px
+				left: 0px
+				bottom: 0px
+				width: 100px
+				display: flex
+				flex-direction: column
+				justify-content: space-between
+				background: white
+				padding-top: 10px
+				padding-bottom: 10px
+				z-index: 3
+
+			.logo
+				+hide-text
+				background:
+					image: url(/assets/img/M2logo.svg)
+					repeat: no-repeat
+					position: center
+					size: contain
+				height: 80px
+				padding-left: 5px
+				margin: 0
+
+			.side-nav
+				ul
+					list-style: none
+					margin: 0px 0
+					padding: 0 20px 0 0
+					text-align: right
+
+					li
+						margin-bottom: 10px
+
+					a
+						color: black
+						text-decoration: none
+
+						&:last-child
+							margin-bottom: 0
+
+			.email-link
+				display: block
+				text-align: right
+				padding-right: 25px
+				padding-bottom:15px
+				text-decoration: none
+		
+			.social-media
+	
+				img
+					height: 30px
+					width: auto
+
+		.mobile-nav
+			display: none
+			position: relative
+			width: 100%
+			background: white
+			padding: 90px 0 20px
+			transform: translateY(-100%)
+			transition: all 0.3s ease-in-out
+
+			ul
+				list-style: none
+				margin: 0
+				padding: 0
+			li
+				text-align: center
+				margin-bottom: 10px
+	
+@media (max-width: 500px)
+	.home-wrap 
+		header
+			width: auto
+			padding: 0px 10px 0px
+
+			.header-position
+				position: relative
+				top: auto
+				bottom: auto
+				left: auto
+				width: auto
+				flex-direction: row
+				align-items: center
+				padding: 0
+				box-shadow: none
+				z-index: auto
+
+			.logo
+				width: 60px
+
+			.side-nav,
+			.email-link
+				display: none
+
+		
+		.mobile-nav
+			display: none
+			position: relative
+			width: 100%
+			background: white
+			padding: 90px 0 20px
+			transform: translateY(-100%)
+			transition: all 0.3s ease-in-out
+	
+			ul
+				list-style: none
+				margin: 0
+				padding: 0
+			li
+				text-align: center
+				margin-bottom: 10px
+
+		.mobile-nav.is-open
+			display: block
+			transform: translateY(0%)
+	
+@media (max-height: 420px)
+	.side-nav
+			ul
+				list-style: none
+				margin: 30px 0 30px 0
+				padding: 60px 20px 30px 0
+				text-align: right
+
+				li
+					font-size: 12px
+	.email-link
+		font-size: 13px
+
+	.social-media
+		display: inline-block
+		margin: 0 auto
+		padding: 0
+
+		img
+			height: 40px
+			width: auto
+			margin: 0
+			padding: 0

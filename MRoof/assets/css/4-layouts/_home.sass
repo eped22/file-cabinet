@@ -1,0 +1,87 @@
+.home-wrap
+	display: flex
+	min-height: 100vh
+	padding: 0
+	padding: 0
+
+.home-sections
+	flex: 1
+
+	.flex
+		display: flex
+		flex-direction: rows
+	
+	.flexsm
+		display: flex
+		flex-direction: rows
+
+	.flex--center
+		justify-content: center
+	
+	.flex--space--around
+		justify-content: space-around
+	
+	.flex--space--between
+		justify-content: space-between
+	
+	.flex--wide
+		justify-content: stretch
+	
+	.order-first
+		order: -1
+
+//Columns
+.col-1
+	max-width: 300px
+	margin: 0 10px
+
+.col-1-2
+	width: 300px
+	margin: 0 10px
+
+.col-2
+	max-width: 620px
+	margin: 0 10px
+
+.col-2-2
+	display: block
+	width: 620px
+	margin: 0 10px
+	
+.col-50
+	width: 50%
+
+.col-33
+	width: calc(100%/3)
+	height: 100%
+	padding: 0
+	margin: 0
+
+
+@media (max-width: 740px)
+	.home-sections .flex
+		display: block
+	
+	.col-1
+		max-width: 100%
+		padding: 0
+		margin: 0
+	
+	.col-50
+		width: auto
+	
+	.col-33
+		width: auto
+	
+	.col-1-2
+		width: auto
+		margin: 0
+	
+	.col-2-2
+		width: auto
+
+
+@media (max-width: 500px)
+	.home-wrap
+		display: block
+	
